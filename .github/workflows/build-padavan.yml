@@ -37,8 +37,6 @@ jobs:
         sh dl_toolchain.sh
         mkdir -p /opt/images/
     - name: Build Firmware
-      env:
-        TNAME: RM2100 
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/RM211.config ] ; then
